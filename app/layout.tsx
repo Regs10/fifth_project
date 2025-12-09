@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import cx from "clsx";
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
+import Header from "@/components/Header";
 
 import {
   ColorSchemeScript,
   MantineProvider,
   createTheme,
+  Container,
   mantineHtmlProps,
 } from "@mantine/core";
+import Footer from "@/components/Footer";
+import CartProvider from "@/context/cart_context";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,6 +38,16 @@ const theme = createTheme({
   primaryColor: "brand",
   primaryShade: 4,
   fontFamily: '"Darker Grotesque", sans-serif',
+  headings: {
+    fontFamily: '"Archivo Black",sans-serif',
+    sizes: {
+      h3: {
+        fontWeight: "500",
+
+        fontSize: "32px",
+      },
+    },
+  },
 });
 
 export default function RootLayout({
@@ -45,7 +61,13 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <CartProvider>
+            <Header />
+            {children}
+            <Footer />
+          </CartProvider>
+        </MantineProvider>
       </body>
     </html>
   );

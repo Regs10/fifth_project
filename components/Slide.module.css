@@ -1,0 +1,28 @@
+.marqueeContainer {
+  width: 100%;
+
+  overflow-x: hidden;
+}
+.marqueeContent {
+  display: flex;
+  width: fit-content;
+  font-size: 98px;
+
+  animation: scrollMarquee 20s linear infinite;
+}
+.productWrap {
+  padding-right: 50px;
+  flex: 0 0 auto;
+  width: fit-content;
+  color: #dbd5cf;
+  font-weight: 500;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
