@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { Carousel } from "@mantine/carousel";
-import { Flex, Text } from "@mantine/core";
+
 import styles from "./Slide.module.css";
 
 export default function Slide() {

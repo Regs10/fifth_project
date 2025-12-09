@@ -1,17 +1,5 @@
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Text,
-  Image,
-  Checkbox,
-} from "@mantine/core";
-import {
-  IconArrowLeft,
-  IconArrowRight,
-  IconShoppingBag,
-} from "@tabler/icons-react";
+import { Box, Button, Flex, Text, Image, Checkbox } from "@mantine/core";
+import { IconArrowRight, IconShoppingBag } from "@tabler/icons-react";
 
 export default function Card() {
   const item = Array.from({ length: 4 });

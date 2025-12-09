@@ -1,10 +1,8 @@
 import Card from "@/components/Card";
-import FillButton from "@/components/FillButton";
-import Header from "@/components/Header";
+
 import HeroSection from "@/components/HeroSection";
 import SmallBox from "@/components/SmallBox";
-import cx from "clsx";
-import classes from "./layout.module.css";
+
 import {
   Box,
   Button,
@@ -12,22 +10,14 @@ import {
   Flex,
   Text,
   Image,
-  TextInput,
   Paper,
   SimpleGrid,
 } from "@mantine/core";
-import {
-  IconArrowLeft,
-  IconArrowRight,
-  IconRosetteDiscountCheck,
-} from "@tabler/icons-react";
-import { relative } from "path";
-import { Carousel } from "@mantine/carousel";
+import { IconArrowRight, IconRosetteDiscountCheck } from "@tabler/icons-react";
+
 import Slide from "@/components/Slide";
-import InputBox from "@/components/FormBox";
+
 import FormBox from "@/components/FormBox";
-import Footer from "@/components/Footer";
-import { wrap } from "module";
 
 export default function Home() {
   return (

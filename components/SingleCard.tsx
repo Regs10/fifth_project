@@ -1,19 +1,6 @@
-import { products } from "@/app/variables/data";
 import { useCartContext } from "@/context/cart_context";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Text,
-  Image,
-  Checkbox,
-} from "@mantine/core";
-import {
-  IconArrowLeft,
-  IconArrowRight,
-  IconShoppingBag,
-} from "@tabler/icons-react";
+import { Box, Button, Flex, Text, Image, Checkbox } from "@mantine/core";
+import { IconArrowRight, IconShoppingBag } from "@tabler/icons-react";
 import { useState } from "react";
 export interface productData {
   id: string;

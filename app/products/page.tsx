@@ -2,7 +2,6 @@
 import { Box, Container, Flex, Grid, Text } from "@mantine/core";
 import { products } from "../variables/data";
 import SingleCard from "@/components/SingleCard";
-import cx from "clsx";
 
 export default function page() {
   return (

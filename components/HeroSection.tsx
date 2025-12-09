@@ -1,6 +1,6 @@
 import { BackgroundImage, Text, Box, Flex, Overlay } from "@mantine/core";
 import React from "react";
-import Header from "./Header";
+
 import FillButton from "./FillButton";
 
 export default function HeroSection() {

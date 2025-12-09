@@ -1,5 +1,5 @@
 "use client";
-import { Box, Drawer, Flex, Image, Text, Title } from "@mantine/core";
+import { Box, Drawer, Flex, Text, Title } from "@mantine/core";
 import React from "react";
 import styles from "./Header.module.css";
 import LogoCircle from "./LogoCircle";
@@ -12,8 +12,8 @@ import {
   AlignJustify,
 } from "lucide-react";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useDisclosure, useMediaQuery } from "@mantine/hooks";
+import { usePathname } from "next/navigation";
+import { useDisclosure } from "@mantine/hooks";
 import { useCartContext } from "@/context/cart_context";
 
 export default function Header() {
