@@ -1,4 +1,4 @@
-import { BackgroundImage, Text, Box, Flex, Overlay } from "@mantine/core";
+import { BackgroundImage, Text, Box, Flex } from "@mantine/core";
 import React from "react";
 
 import FillButton from "./FillButton";

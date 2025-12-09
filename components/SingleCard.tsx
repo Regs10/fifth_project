@@ -13,7 +13,7 @@ export interface productData {
 }
 
 export default function Card({ item }: { item: productData }) {
-  const [selectedId, setSelectedId] = useState<string>();
+  const [selectedId] = useState<string>();
   const { id, name, price } = item;
   const { addToCart } = useCartContext();
   return (
